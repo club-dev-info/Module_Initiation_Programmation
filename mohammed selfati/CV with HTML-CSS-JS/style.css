@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    padding: 0 100px 0 100px;
+}
+nav ul,
+.main-info-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+body{
+    background: white;
+}
+header h1{
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar{
+    background: #181818;
+}
+li{
+    list-style: none;
+    margin-left:30px ;
+}
+a{
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: relative;
+    top:50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    color: white;
+    transition: all .3s ease;
+}
+a:hover{
+    font-size: .99rem;
+}
+.main-info-section{
+     height: 100vh; 
+}
+.text{
+    margin-top: 120px;
+    color: #181818ee;
+    cursor: context-menu;
+}
+.text h1{
+    font-size: 3rem;
+}
+.profile-img img{
+    width: 250px;
+    margin-top: 50px;
+}
+.about{
+    height: 100vh;
+    margin-top: 100px;
+}
+.about h1{
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .1;
+}
+.about-me-info{
+    max-width: 900px;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(255, 255, 255, 0.25);
+    padding: 50px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.dark-theme .about-me-info{
+    background-color: #ffffff;
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+}
+.dark-theme .about-me-info p{
+    color: rgba(0, 0, 0, 0.815);
+}
+.dark-theme .about h1{
+    color: rgb(255, 255, 255);
+    opacity: .2;
+}
+
+
+.about-me-info p{
+    color: white;
+    font-size: 1.3rem;
+}
+.about-me-info p:nth-child(2),
+.about-me-info p:last-child{
+    margin-top: 30px;
+}
+.about img{
+    width: 300px;
+    position: relative;
+    top: -300px;
+    left: 800px;
+    transform: translateX(100px);
+}
+.contact{
+    margin-top: 50px;
+}
+form{
+    z-index: 1;
+
+}
+form input,
+form textarea{
+    display: block;
+    width: 400px;
+    padding: 15px;
+    background-color:#252627;
+    border: none;
+     border-radius: 15px; 
+    margin: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.dark-theme form input{
+    background-color:#ffffffdc;
+}
+.dark-theme form textarea{
+    background-color:#ffffffdc;
+}
+.contact h1{
+    position: relative;
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .1;
+    top:90px;
+    left:50% ;
+    display: inline-block;
+}
+.dark-theme .contact h1{
+    color: white;
+}
+form input:last-child{
+    width: 150px;
+    cursor: pointer;
+    border: none;
+}
+.dark-theme form input:last-child{
+    color: black;
+}
+footer hr{
+     border: 2px solid #707070;
+     margin-top: 80px;
+}
+footer p{
+    text-align: center;
+    color: #707070;
+    font-size:1.2rem;
+    padding: 30px 0;
+}
+.dark-theme footer p{
+   color: rgba(0, 0, 0, 0.822);
+}
+.dark-theme footer {
+    background: rgba(255, 255, 255, 0.877);
+ }
+#change-theme-btn{
+    position: fixed;
+    background:rgba(0, 0, 0, 0.87);
+    border-radius: 50%;
+    padding:0;
+    top: 80%;
+    left: 90%;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.dark-theme #change-theme-btn{
+    background:rgba(253, 253, 253, 0.87);
+    color: rgba(0, 0, 0, 0.87);
+}
+.dark-theme{
+    background-color: rgba(0, 0, 0, 0.932);
+    color: white;
+}
+.dark-theme h1{
+    color: white;
+}
